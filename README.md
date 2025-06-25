@@ -31,3 +31,11 @@ The n8n workflow is composed of the following key modules:
 🖼️ **Workflow Preview:**
 
 ![Workflow Diagram](docs/workflow.png)
+
+## 🔧 Suggestions for Improvement
+
+1. **Add fallback to OpenAI GPT if Claude fails**
+2. **Add MACD or RSI as toggleable indicators**
+3. **Allow users to specify chart timeframe (1D, 1W)**
+4. **Add error handling for invalid ticker input**
+5. **Local logging or Telegram notification integration**
