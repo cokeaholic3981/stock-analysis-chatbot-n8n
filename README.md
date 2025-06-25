@@ -22,3 +22,13 @@ A no-code/low-code chatbot built with [n8n](https://n8n.io/) that performs real-
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-username/stock-analysis-chatbot-n8n.git
+
+2. Import the workflow:
+  - Go to your n8n instance
+  - Click on Import Workflow
+  - Select n8n/Stock_Technical_Analysis.json
+
+3. Set up required credentials:
+  - Header Auth for Chart-IMG API
+  - Anthropic API for Claude
+  - (Optional) Notion integration
