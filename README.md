@@ -17,18 +17,17 @@ A no-code/low-code chatbot built with [n8n](https://n8n.io/) that performs real-
 
 ![Demo](docs/demo1.png)
 
-## 🛠 How to Use
+## 🧠 Architecture Overview
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/stock-analysis-chatbot-n8n.git
+The n8n workflow is composed of the following key modules:
 
-2. Import the workflow:
-  - Go to your n8n instance
-  - Click on Import Workflow
-  - Select n8n/Stock_Technical_Analysis.json
+1. **Chat Trigger** – receives stock ticker input from the user
+2. **Claude LLM Chain** – prompts Anthropic Claude to generate human-like technical analysis
+3. **TradingView Chart Fetcher** – pulls SuperTrend, SMA, and Volume chart via chart-img API
+4. **Basic LLM Chain** – uses Claude to analyze the chart image
+5. **Response Node** – generates a readable final summary
+6. **Notion Integration** – logs output (optional)
 
-3. Set up required credentials:
-  - Header Auth for Chart-IMG API
-  - Anthropic API for Claude
-  - (Optional) Notion integration
+🖼️ **Workflow Preview:**
+
+![Workflow Diagram](docs/workflow.png)
