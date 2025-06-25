@@ -15,7 +15,7 @@ A no-code/low-code chatbot built with [n8n](https://n8n.io/) that performs real-
 
 ## 🚀 Demo
 
-![Demo](docs/demo1.png)
+![Demo](docs/demo12.png)
 
 ## 🧠 Architecture Overview
 
